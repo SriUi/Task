@@ -1,0 +1,38 @@
+{
+"sales":
+[
+{"modelName":"Samsung Galaxy",
+  "description":"Samsung Galaxy Description",
+  "price":"35000",
+"image":"app/data/images/samsung.jpeg"
+},
+{"modelName":"Black Berry",
+  "description":"Black Berry Description",
+  "price":"25000",
+"image":"app/data/images/bb.jpeg"
+},
+{"modelName":"iPhone6",
+  "description":"iPhone6  Description",
+  "price":"70000",
+"image":"app/data/images/iphon6.jpeg"
+},
+
+{"modelName":"Microsoft",
+  "description":"Microsoft  Description",
+  "price":"35000",
+"image":"app/data/images/microsoft.jpeg"
+},
+
+{"modelName":"Nokia",
+  "description":"Nokia  Description",
+  "price":"35000",
+"image":"app/data/images/nokia.jpeg"
+},
+{"modelName":"Samsung2",
+  "description":"Samsung2Description",
+  "price":"5000",
+"image":"app/data/images/samsung2.jpeg"
+}
+
+]
+}

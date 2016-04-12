@@ -1,0 +1,9 @@
+{
+	"cities": [{"name":"Hyderabad","code":"TL"},
+                            {"name":"Vijayawada","code":"AP"},
+                            {"name":"Boca Raton","code":"FL"},
+                            {"name":"Irving","code":"TX"}
+
+                          ]
+			   	
+}

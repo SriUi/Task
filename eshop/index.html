@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="eshop">
+<head>
+	<title>eShop</title>
+	<link rel="stylesheet" href="content/css/bootstrap.min.css">
+	<link rel="stylesheet" href="content/css/bootstrap-theme.min.css">
+	<script src="vendor/jquery-2.2.2.min.js"></script>
+	<script src="vendor/bootstrap.js"></script>
+	<script src="vendor/angular.min.js"></script>
+<head>
+<!--declare ng-app for the whole document in html tag-->	
+<body>
+
+<div class="container" ng-controller="mainCtrl">
+	<div ng-include="navUrl">	</div>
+	<!-- {{content}}	
+	<button class="btn btn-primary" ng-click="handleclick()"> Change Content </button>
+</div>	 -->
+<div ng-include="contentUrl"></div>
+
+	<script src="app/app.js"></script>
+	<script src="app/main/mainCtrl.js"></script>
+	<!--Login-->
+	<script src="app/login/login.js"></script>
+
+	<!--Sales-->
+	<script src="app/sales/sales.js"></script>
+	<script src="app/sales/salesCtrl.js"></script>
+	
+	<!--Registration-->
+	<script src="app/register/register.js"></script>
+	<script src="app/register/registerCtrl.js"></script>
+
+
+	<!--Cart-->
+	<script src="app/cart/cart.js"></script>
+	<!--Navigation -->
+	<script src="app/navigation/navigation.js"></script>	
+	<script src="app/navigation/navCtrl.js"></script>
+	<!--Factories-->
+	<script src="app/common/common.js"></script>
+	<script src="app/common/countriesFactory.js"></script>
+	<script src="app/common/statesFactory.js"></script>
+	<script src="app/common/salesFactory.js"></script>
+
+</body>
+</html>

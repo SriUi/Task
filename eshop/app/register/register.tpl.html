@@ -1,0 +1,97 @@
+<div class="bs-example" ng-controller="registerCtrl">
+    <center><h2> Registration Form</h2></center>
+    <form>
+        <div class="row">
+            <div class="col-xs-2">
+                <label> FirstName</label>
+            </div>
+            <div class="col-xs-4">
+                <input type="text" class="form-control" ng-model="registerUser.firstName">
+            </div>
+        </div><br>
+            <div class="row">
+            <div class="col-xs-2">
+                <label>Last Name</label>
+            </div>
+            <div class="col-xs-4">
+                <input type="text" class="form-control" ng-model="registerUser.lastName">
+            </div>
+        </div>
+        <br>
+            <br>
+            <div class="row">
+            <div class="col-xs-2">
+                <label>Gender</label>
+            </div>
+            <div class="col-xs-2">
+                Male
+                <input type="radio" name="gender" ng-model="gender" value="M">
+            </div>
+			<div class="col-xs-2">
+                Female
+                <input type="radio" name="gender" ng-model="gender" value="F">
+            </div>
+            
+            </div>
+             <br>
+                        <div class="row">
+            <div class="col-xs-2">
+                <label>Age</label>
+            </div>
+            <div class="col-xs-4">
+                <input type="number" min=18 max=60 placeholder="Age" ng-model="registerUser.age">
+            </div>
+        </div><br>
+            <div class="row">
+            <div class="col-xs-2">
+                <label>Email</label>
+            </div>
+            <div class="col-xs-4">
+                <input type="email" placeholder="Email" ng-model="registerUser.email">
+            </div>
+        </div>       
+            <br>  
+                
+
+        <div class="row">
+            <div class="col-xs-2">
+                <label>Address</label>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-xs-4">
+                <select ng-model="selectedCountry" class="form-control" ng-options="country.name for country in countries" ng-change="countryChanged()">
+                    <option value=""> Select Country</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        
+        <div class="row">
+            <div class="col-xs-3">
+                <select class="form-control" ng-model="selectedState" ng-options="state.name for state in states" ng-change="stateChanged()">
+                    <option value="">Select State</option>
+                </select>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-xs-3">
+                <select class="form-control" ng-model="selectedCity" ng-options="city.name for city in cities">
+                    <option value="">Select City</option>
+                </select>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-xs-10">
+               <input type="text" placeholder="Phone Number" ng-model="registerUser.phone"> 
+            </div>
+        </div>
+        <br>
+    </div>
+    <br>  
+        
+        <button type="button" class="btn btn-default btn-lg" ng-click="register()">Register</button>
+    </form>
+   <div class="row"><pre ng-if="isRegister" ng-model="registerUser">{{registerUser}}</pre></div>
+
+</div>

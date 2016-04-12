@@ -1,0 +1,30 @@
+{
+	"states" : [
+	{
+	 "name":"Telangana",
+	 "countrycode":"IN",
+	 "statecode":"TL"
+	 },
+    {
+     "name":"Andhrapradesh",
+     "countrycode":"IN",
+     "statecode":"AP"
+     },
+    {
+    "name":"Florida",
+    "countrycode":"US",
+    "statecode":"FL"
+    },
+    {
+    "name":"Oregon",
+    "countrycode":"US",
+    "statecode":"OR"
+    },
+    {
+    "name":"Texas",
+    "countrycode":"US",
+    "statecode":"TX"
+	}
+   ]
+
+}

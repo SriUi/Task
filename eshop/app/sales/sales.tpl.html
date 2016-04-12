@@ -1,0 +1,21 @@
+    <div class="table-responsive" ng-controller="salesCtrl"> 
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="x in sales">
+                    <th>{{x.model}}</th>
+                    <th>{{x.description}}</th>
+                    <th>{{x.price}}</th>
+                    <th width="30px" height="30px">{{x.image}}</th>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
